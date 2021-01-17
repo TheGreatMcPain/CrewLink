@@ -52,7 +52,7 @@
     "electron-updater": "^4.3.5",
     "electron-window-state": "^5.0.3",
     "iohook": "git://github.com/zbanks/iohook.git#0.7.2_zbanks",
-    "memoryjs": "https://github.com/zbanks/memoryjs.git",
+    "memoryjs": "https://github.com/TheGreatMcPain/memoryjs.git",
     "pretty-bytes": "^5.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
