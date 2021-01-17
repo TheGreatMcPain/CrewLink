@@ -224,11 +224,18 @@ if (!gotTheLock) {
 		}
 	});
 
+	app.disableHardwareAcceleration();
+
 	// create main BrowserWindow when electron is ready
 	app.whenReady().then(() => {
-		mainWindow = createMainWindow();
-		overlayWindow = createOverlay();
-		initializeIpcListeners(overlayWindow);
-		initializeIpcHandlers();
+		setTimeout(
+			function() {
+				mainWindow = createMainWindow();
+				overlayWindow = createOverlay();
+				initializeIpcListeners(overlayWindow);
+				initializeIpcHandlers();
+			},
+			process.platform === 'linux' ? 1000 : 0
+		)
 	});
 }
