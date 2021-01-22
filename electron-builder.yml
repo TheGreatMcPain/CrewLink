@@ -12,3 +12,8 @@ files:
 win:
   publish:
     - github
+linux:
+  publish:
+    - github
+  target:
+    - AppImage

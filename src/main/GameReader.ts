@@ -1,7 +1,6 @@
 import {
 	DataType,
 	findModule,
-	getProcesses,
 	ModuleObject,
 	openProcess,
 	ProcessObject,
@@ -60,8 +59,9 @@ export default class GameReader {
 	gameCode = 'MENU';
 
 	checkProcessOpen(): void {
-		const processOpen = getProcesses().find((p) => p.szExeFile === 'Among Us.exe');
+		// const processOpen = getProcesses().find((p) => p.szExeFile === 'Among Us.exe');
 
+		const processOpen = true;
 		if (!this.amongUs && processOpen) {
 			try {
 				this.amongUs = openProcess('Among Us.exe');
