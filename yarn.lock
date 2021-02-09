@@ -7027,7 +7027,7 @@ memory-fs@^0.5.0:
 
 "memoryjs@git://github.com/TheGreatMcPain/memoryjs":
   version "0.0.1"
-  resolved "git://github.com/TheGreatMcPain/memoryjs#0dcc6bc700454e105efc2b5157cc8d31fb76468f"
+  resolved "git://github.com/TheGreatMcPain/memoryjs#317193aab5d075f0a5ab4a5b5bea528eeab14c7b"
   dependencies:
     bindings "^1.5.0"
     concentrate "^0.2.3"
